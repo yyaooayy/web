@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        id在同一个html文档中只能有一个 
+        id在javascript中有用
+    -->
+    <form action="https://www.baidu.com" id="firstform">
+        <input type="text" id="username" name="username">
+        <input type="text" id="usercode" name="usercode">
+    </form>
+
+
+    <!-- 
+        div和span都是图层
+        保证页面可以灵活的布局
+        div和span可以通过左上角的x、y坐标定位
+        div默认独占一行，span不会
+     -->
+    <div id="div1">我是第一个div</div>
+    <div id="div2">我是第二个div</div>
+    <span id="span1">我是第一个span</span>
+    <span id="span2">我是第二个span</span>
+</body>
+</html>

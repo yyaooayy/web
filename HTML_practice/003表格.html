@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        table标签是表格 
+        tr表示一行
+        td表示一行中的一个单元格
+        th也是单元格标签，比td多的是居中和加粗
+    -->
+    <!-- 
+        border：设置表格的边框为多少像素px或百分比
+        width：表格的宽度 px 或 %
+        height：表哥的高度 px
+     -->
+     <center><h1>信息表</h1></center> 
+     <hr color="green" width="60%">
+    <table align="center" border="1px" width="60%" height="200px">
+        <!-- align对齐方式 -->
+        <tr>
+            <th>员工姓名</th>
+            <th>员工编号</th>
+            <th>员工部门</th>
+        </tr>
+        <tr align="center">
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td align="center">e</td>
+            <td align="right">f</td>
+        </tr>
+        <tr align="center">
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+    </table>
+    <hr color="blue" width="60%">
+
+
+    <br>
+    <br>
+    <br>
+    <!-- 单元格合并 -->
+    <!-- 
+        注意事项：
+        1、rowspan合并的时候删除下面的 
+        2、colspan合并的时候删除哪一个没有要求
+     -->
+    <table align="center" border="1px" width="60%" height="200px">
+        <!-- align对齐方式 -->
+        <tr align="center">
+            <td colspan="2">a</td>
+            <!-- <td>b</td> -->
+            <td>c</td>
+        </tr>
+        <tr align="center">
+            <td>d</td>
+            <td>e</td>
+            <td rowspan="2">f</td>
+        </tr>
+        <tr align="center">
+            <td>g</td>
+            <td>h</td>
+            <!-- <td>i</td> -->
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <br>
+    <!-- 
+        thead tbody tfoot标签
+     -->
+    <table align="center" border="1px" width="60%" height="200px">
+        <!-- align对齐方式 -->
+        <thead>
+            <tr align="center">
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr align="center">
+                <td>g</td>
+                <td>h</td>
+                <td>i</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
